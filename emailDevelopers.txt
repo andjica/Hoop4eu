@@ -1,0 +1,6 @@
+MAIL_DRIVER=smtp
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=465
+MAIL_USERNAME=developersforanymarket
+MAIL_PASSWORD=xncdnxhlpdpdwkuo
+MAIL_ENCRYPTION=SSL

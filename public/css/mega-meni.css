@@ -1,0 +1,45 @@
+
+
+.megamenu {
+  position: static;
+  float: right;
+}
+
+.megamenu .dropdown-menu {
+  background: none;
+  border: none;
+  width: 100%;
+}
+
+.logo-hoop
+{
+  width:120px;
+}
+
+
+code {
+  color: #745eb1;
+  background: #fff;
+  padding: 0.1rem 0.2rem;
+  border-radius: 0.2rem;
+}
+
+.text-uppercase {
+  letter-spacing: 0.08em;
+}
+
+.image-meni
+{
+    background: center center url('http://localhost/hoop/public/img/girlcv4.jpg')no-repeat; 
+    background-size: cover;
+}
+@media only screen and (max-width: 420px) {
+  .p12{
+    display: none;
+}}
+
+.bg-three
+{
+  background-image: url('http://localhost/hoop/public/img/building.jpg');
+
+}
