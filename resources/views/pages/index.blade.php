@@ -1,6 +1,16 @@
 @include('components.header')
 @include('components.nav')
-
+<div class="winter-is-coming">
+  
+  <div class="snow snow--near"></div>
+  <div class="snow snow--near snow--alt"></div>
+  
+  <div class="snow snow--mid"></div>
+  <div class="snow snow--mid snow--alt"></div>
+  
+  <div class="snow snow--far"></div>
+  <div class="snow snow--far snow--alt"></div>
+</div>
 @include('components.main-search')
 <a href="https://api.whatsapp.com/send?phone=31614434966" class="float" target="_blank">
 <i class="fa fa-whatsapp my-float"></i>
