@@ -67,3 +67,8 @@ Route::get('/apply-job/{id}', 'FrontController@apply_job')->name('apply-job');
 //contact
 Route::get('/contact', 'FrontController@contact')->name('contact');
 Route::post('/contact/email', 'EmailController@contact')->name('contact-email');
+
+//over ons
+Route::get('/over-ons', function () {
+    return view('pages.over-ons');
+});

@@ -72,7 +72,7 @@
                 <i class="fas fa-phone text-warning"></i> D-inlineTelefoon: <br> 0180 – 531191, <br><br>
                 <i class="fas fa-map-marker-alt text-warning"></i> Deventerseweg 50, 2994LD Barendrecht <br><br>
                 <a href="https://www.facebook.com/Hoop4eu/"><i class="fab fa-facebook-square fa-2x text-primary"></i></a> &nbsp;  <a href="https://twitter.com/hoop4eu"><i class="fab fa-twitter-square fa-2x text-info"></i> </a> &nbsp; 
-                <a href="https://www.linkedin.com/company/hoop-4-eu"><i class="fab fa-linkedin fa-2x text-primary"></i> </a><a href="https://www.youtube.com/channel/UCt84MgIuZcf0_va3atJCYjA"> &nbsp; <i class="fab fa-youtube-square fa-2x text-danger"></i></a>
+                <a href="https://www.linkedin.com/company/hoop-4-eu"><i class="fa fa-linkedin fa-2x text-primary"></i> </a><a href="https://www.youtube.com/channel/UCt84MgIuZcf0_va3atJCYjA"> &nbsp; <i class="fa fa-youtube-square fa-2x text-danger"></i></a>
                 </div>
             
                 </div>
@@ -82,7 +82,7 @@
                 <h4 class="font-italic">Over Ons</h4>
                     <p class="mb-0">Hoop 4 EU verzorgt uitzending en werving & selectie van vakkundig personeel 
                 oor functies binnen Techniek, Bouw, Logistiek, Office en Onderwijs. </p>
-                <a href="">Zie meer</a>
+                <a href="{{asset('/over-ons')}}">Zie meer</a>
                 </div>
                 </div>
             </div>
