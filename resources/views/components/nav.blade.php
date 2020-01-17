@@ -1,5 +1,5 @@
   <!-- Navigation -->
-  <div class="container p12">
+  <div class="container p12  border-bottom">
       <header class="blog-header">
         <div class="row">
          
@@ -14,7 +14,7 @@
         </div>
       </header>
       </div>
-      <hr>
+      
   <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
   <a href="#" class="navbar-brand text-white font-weight-bold d-block d-lg-none">MegaMenu</a>
   <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">

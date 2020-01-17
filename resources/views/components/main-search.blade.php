@@ -1,4 +1,4 @@
-<section class="section-content mb-4   team-template">
+<section class="section-content mb-4   team-template header-mobile">
 <div class="container">
 
 

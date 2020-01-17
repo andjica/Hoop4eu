@@ -13,7 +13,13 @@
 
 
 }
-
+@media screen and (max-width:768px){
+  .header-mobile{
+      background-position:top;
+   background-image: url('http://localhost/hoop3/img/mobilegirl.png')
+   }
+  }
+  
 .margin-top-search
 {
   margin-top:100px;
