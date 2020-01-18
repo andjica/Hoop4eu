@@ -110,14 +110,17 @@
                <div class="card-body small">
                Posted on {{$job->created_at->format('d-m-Y')}}
                    <h5 class="card-title"><img src="{{asset('/')}}img/bag.jpg" alt="" class="mr-2 rounded" width="45">
-                   <img src="{{asset('/img-categories/'.$job->category->img)}}" alt="{{$job->category->name}}" class="mr-2 rounded" width="45px">Category:{{$job->category->name}}</h5>
+                   <img src="{{asset('/img-categories/'.$job->category->img)}}" alt="{{$job->category->name}}" class="mr-2 rounded" width="45px">  
+                   
+                    </h5>
+                    <strong class=" text-primary lead">Category: {{$job->category->name}}</strong><br>
+                    <p class="card-title"></p>
 
                    <p class="card-text">{{$job->desc1}}</p>
                    <i class="fas fa-clock text-info"></i> Full time : {{$job->fulltime ? 'Yes' : 'No'}} &nbsp;
                         <i class="fas fa-clock text-info"></i> Parttime time : {{$job->parttime ? 'Yes' : 'No'}} &nbsp;
-                        <i class="fas fa-clock text-info"></i> Tijdelijk time : {{$job->tijdelijk ? 'Yes' : 'No'}} &nbsp; <br>
-                        {{$job->city->name}}
-                    <strong class="d-block text-primary lead">Category: {{$job->category->name}}</strong><br>
+                        <i class="fas fa-clock text-info"></i> Tijdelijk time : {{$job->tijdelijk ? 'Yes' : 'No'}} &nbsp; <br><br>
+                        <p class="card-title"><i class="fas fa-map-marker-alt text-warning fa-2x"></i><b>City:</b> </i>{{$job->city->name}} </p>
                     <a href="{{asset('/job/'.$job->id)}}" class="btn btn-info">Zie meer</a><br>
                 
                </div>

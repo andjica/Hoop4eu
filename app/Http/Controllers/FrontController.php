@@ -26,7 +26,9 @@ class FrontController extends Controller
         $cityId = request()->citysearch;
         $categoryId = request()->categorysearch;
 
-        $jobs = Job::where('city_id', $cityId)->where('category_id', $categoryId)
+        $jobs = Job::where('city_id', $cityId)
+        ->where('category_id', $categoryId)
+        ->orderBy('created_at', 'desc')
         ->paginate(3);
 
 
@@ -60,6 +62,7 @@ class FrontController extends Controller
         ->where('fulltime',$fulltime)
         ->where('parttime', $parttime)
         ->where('tijdelijk', $thirdtime)
+        ->orderBy('created_at', 'desc')
         ->paginate(3);
 
         
