@@ -15,6 +15,8 @@
         </div>
     </div>
 </div>
+<a href="#nadji" class="d-lg-none "><i class="fas fa-search search-icon"></i></a>
+
 <section class="section-content">
 <div class="container border">
         <div class="row">
@@ -88,7 +90,7 @@
             </div>
             <!-- End Sidebar -->
             <!-- Jobs -->
-           <div class="col-lg-8 shadow-sm">
+           <div class="col-lg-8 shadow-sm order-first">
            @if ($errors->any())
                     <div class="alert alert-danger mt-3">
                         <ul>
