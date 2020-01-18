@@ -2,25 +2,28 @@
 @include('components.nav')
 @include('components.jumbo')
 
-<div class="card border-0 shadow my-5">
+
 <div class="container">
-        <div class="row">
-        <div class="col-lg-4 girl-back">
-            
-        </div>
-            <div class="col-lg-8 pt-5">
-            <h6 class="border-bottom border-gray pb-2 pt-5 pb-3 pl-3 mb-0 text-info"> </h6>
-            </div>
-        </div>
+<div class="row">
+<div class="col-lg-12">
+           
+           <div class="d-flex align-items-center  text-white-50 bg-white rounded shadow-sm">
+               <img class="mr-3" src="{{asset('/')}}img/logo3.jpg" alt="hoop4eu" width="200" height="100">
+               <div class="lh-100">
+               <h5 class="mb-0 text-dark lh-100">Actuele Vacatures</h5>
+              
+               </div>
+           </div>
+       </div>
     </div>
 </div>
-<a href="#nadji" class="d-lg-none "><i class="fas fa-search search-icon"></i></a>
+<a href="#" id="nadji" class="d-lg-none"><i class="fas fa-search search-icon"></i></a>
 
 <section class="section-content">
 <div class="container border">
         <div class="row">
         <!-- Sidebar -->
-        <div class="col-lg-4 pt-3">
+        <div class="col-lg-4 pt-3" id="div-search">
             <div class="card bg-light">
             <form class="mt-3 mb-3 right p-2"  id="form-search" action="{{route('vacatures-two')}}" method="GET">
             <div class="form-group">

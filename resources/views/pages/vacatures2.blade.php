@@ -14,13 +14,13 @@
         </div>
     </div>
 </div>
-<a href="#nadji" class="d-lg-none "><i class="fas fa-search search-icon"></i></a>
+<a href="#" id="nadji" class="d-lg-none"><i class="fas fa-search search-icon"></i></a>
 
 <section class="section-content">
 <div class="container border">
         <div class="row">
         <!-- Sidebar -->
-        <div class="col-lg-4 pt-3">
+        <div class="col-lg-4 pt-3" id="div-search">
             <div class="card bg-light">
             <form class="mt-3 mb-3 right p-2"  id="form-search" action="{{route('vacatures-two')}}" method="GET">
             <div class="form-group">

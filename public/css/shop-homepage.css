@@ -201,6 +201,11 @@ width:100%;
   }
 }
 @media screen and (max-width:468px){
+  .vojklass{
+  display:none;
+    }
+  }
+@media screen and (max-width:468px){
   .search-icon{
      
       position: fixed;

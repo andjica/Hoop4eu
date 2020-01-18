@@ -154,6 +154,8 @@
   <script src="{{asset('/')}}/js/slider.js"></script>
   <script src="{{asset('/')}}/js/back.js"></script>
   <script src="{{asset('/')}}/js/search-table.js"></script>
+  <script src="{{asset('/')}}/js/scroll-search.js"></script>
+
 </body>
 
 </html>

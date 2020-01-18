@@ -12,7 +12,7 @@
   <div class="snow snow--far snow--alt"></div>
 </div>
 @include('components.main-search')
-<a href="https://api.whatsapp.com/send?phone=31614434966" class="float" target="_blank">
+<a href="https://api.whatsapp.com/send?phone=31681616108" class="float" target="_blank">
 <i class="fa fa-whatsapp my-float"></i>
 </a>
 <section class="section-content ">
