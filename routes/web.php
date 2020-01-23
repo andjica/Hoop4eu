@@ -39,26 +39,34 @@ Route::get('/home-create-city', 'HomeController@create_city')->name('home-create
 Route::get('/home-create-category', 'HomeController@create_category')->name('home-create-category');
 
 
-//create
-Route::post('/create-city', 'CityController@create')->name('create-city');
-Route::post('/create-category', 'CategoryController@create')->name('create-category');
-Route::post('/create-job', 'JobController@create')->name('create-job');
 
-//delete
-Route::get('/delete-city/{id}', 'CityController@destroy')->name('delete-city');
-Route::get('/delete-category/{id}', 'CategoryController@destroy')->name('delete-category');
-Route::get('/delete-job/{id}', 'JobController@destroy')->name('delete-job');
+//middlware protection
+Route::group(['middleware' => ['admin']], function () {
 
-//edit
-Route::get('/edit-city/{id}', 'CityController@edit')->name('edit-city');
-Route::post('/update-city/{id}', 'CityController@update')->name('update-city');
+    //create
+    Route::post('/create-city', 'CityController@create')->name('create-city');
+    Route::post('/create-category', 'CategoryController@create')->name('create-category');
+    Route::post('/create-job', 'JobController@create')->name('create-job');
 
-Route::get('/edit-category/{id}', 'CategoryController@edit')->name('edit-category');
-Route::post('/update-category/{id}', 'CategoryController@update')->name('update-category');
+    
+    //edit
+    Route::get('/edit-city/{id}', 'CityController@edit')->name('edit-city');
+    Route::post('/update-city/{id}', 'CityController@update')->name('update-city');
+
+    Route::get('/edit-category/{id}', 'CategoryController@edit')->name('edit-category');
+    Route::post('/update-category/{id}', 'CategoryController@update')->name('update-category');
 
 
-Route::get('/edit-job/{id}', 'JobController@edit')->name('edit-job');
-Route::post('/update-job/{id}', 'JobController@update')->name('update-job');
+    Route::get('/edit-job/{id}', 'JobController@edit')->name('edit-job');
+    Route::post('/update-job/{id}', 'JobController@update')->name('update-job');
+    //delete
+    Route::get('/delete-category/{id}', 'CategoryController@destroy')->name('delete-category');
+    Route::get('/delete-job/{id}', 'JobController@destroy')->name('delete-job');
+    Route::get('/delete-city/{id}', 'CityController@destroy')->name('delete-city');
+  
+});
+
+
 
 //send email
 Route::post('/send-email', 'EmailController@send')->name('send-email');

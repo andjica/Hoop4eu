@@ -1,4 +1,8 @@
-@include('components.header')
+
+<?php 
+  echo 'Current PHP version: ' . phpversion();
+
+?>@include('components.header')
 @include('components.nav')
 <div class="winter-is-coming">
   
