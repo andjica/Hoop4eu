@@ -9,11 +9,11 @@
 <center>
 <img src="{{asset('/')}}img/logo4.jpg" class="img-fluid" style="margin:0px auto">
 <div style="background:#f5f2e4; width:50%; padding:10px; margin-top:25px;">
-    <p><b>This is a new interested user:</b>  {{ $job['firstname'] }} {{$job['lastname']}}<br>
-    <b>Job name:</b>{{ $job['jobname'] }}<br>
-    <b>Job ID:</b> {{ $job['jobid'] }}<br>
-    <b>Category: {{$job['category']}}</b><br>
-    <b>City: {{$job['city']}}</b><br>
+    <p><b>Er is een nieuwe aanmelding voor de Vacature:</b>  {{ $job['firstname'] }} {{$job['lastname']}}<br>
+    <b>Vacature Naam:</b>{{ $job['jobname'] }}<br>
+    <b>Vacature nummer:</b> {{ $job['jobid'] }}<br>
+    <b>Branche: {{$job['category']}}</b><br>
+    <b>Stad: {{$job['city']}}</b><br>
 </p>
 </div>
 <img class="img-fluid rounded" src="{{asset('/')}}img/job.jpg" alt="hoop4eu vacature" style="width:50%">

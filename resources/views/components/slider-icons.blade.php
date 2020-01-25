@@ -4,7 +4,7 @@
     <section class="customer-logos slider">
         <div class="slide"><a href="https://www.ask-romein.com/"><img src="{{asset('/')}}img/ASK-Romein.gif"></a></div>
         <div class="slide"><a href="http://www.cofely-gdfsuez.nl/"><img src="{{asset('/')}}img/Cofely.png"></a></div>
-        <div class="slide"><a href="http://www.go-ctp.nl/"><img src="{{asset('/')}}img/Ctp.png"></a></div>
+        <div class="slide"><a href="http://www.go-ctp.nl/"><img src="{{asset('/')}}img/CTP.png"></a></div>
         <div class="slide"><a href="https://www.feadship.nl/nl/family/de-vries-groep"><img src="{{asset('/')}}img/de-vries-cheepsbouw.png"></a></div>
         <div class="slide"><a href="https://www.kelvion.com/nl/"><img src="{{asset('/')}}img/gea-goedhart.jpg"></a></div>
         <div class="slide"><a href="https://www.geerlofs.com/"><img src="{{asset('/')}}img/geerlofs.png"></a></div>

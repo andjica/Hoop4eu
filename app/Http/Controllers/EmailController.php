@@ -25,7 +25,7 @@ class EmailController extends Controller
          
          
           
-            Mail::to('test@test.com')->send(new JobMail($job));
+            Mail::to('andjaaa95@gmail.com')->send(new JobMail($job));
 
             return back()->with('success', 'Bedankt dat je contact met ons hebt opgenomen. Je hebt binnen 48 uur op Hoop4eu gereageerd!');
 

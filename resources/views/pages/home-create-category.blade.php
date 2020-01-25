@@ -26,10 +26,10 @@
         @include('components.admin.sidebar')
     </div>
     <div class="col-lg-7 bg-white border p-3">
-    <a href="{{route('home-categories')}}" class="lead"><i class="fas fa-arrow-left text-infofa-2x"></i>Manage categories</a> &nbsp; &nbsp;
+    <a href="{{route('home-categories')}}" class="lead"><i class="fas fa-arrow-left text-infofa-2x"></i>Manage Branches</a> &nbsp; &nbsp;
 
             <form action="{{route('create-category')}}" method="POST" enctype="multipart/form-data">
-            <h3 class="lead mt-3 text-muted"> Voeg een categorie toe</h3>
+            <h3 class="lead mt-3 text-muted"> Voeg een Branche toe</h3>
 
             @csrf
                 @if ($errors->any())
@@ -47,16 +47,16 @@
                 </div>
                 @endif
             <div class="form-group">
-                <label for="examplecategory">Category name</label>
+                <label for="examplecategory">Branche naam</label>
                 <input type="text" class="form-control" id="category" name="category" aria-describedby="category" placeholder="Enter category">
                 <small id="cat" class="form-text text-muted">Entre category name(Economy, Marketing, Artist)</small>
             </div>
             <div class="form-group">
-                <label for="examplecategory">Category name</label>
+                <label for="examplecategory">Branche naam</label>
                 <input type="file" class="form-control" id="image" name="image" aria-describedby="img" placeholder="Enter category">
-                <small id="cat" class="form-text text-muted">Choose image for this category</small>
+                <small id="cat" class="form-text text-muted">Kies een foto voor deze Branche</small>
             </div>
-            <button type="submit" class="btn btn-primary">Create category</button>
+            <button type="submit" class="btn btn-primary">Voeg Branche toe</button>
             </form>
                     <div>
                 </div>

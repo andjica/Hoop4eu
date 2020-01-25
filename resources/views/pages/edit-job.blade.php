@@ -30,11 +30,11 @@
         @include('components.admin.sidebar')
     </div>
     <div class="col-lg-7 bg-white border p-3">
-    <a href="{{route('home-jobs')}}" class="lead"><i class="fas fa-arrow-left text-infofa-2x"></i>Manage jobs</a> &nbsp; &nbsp;
+    <a href="{{route('home-jobs')}}" class="lead"><i class="fas fa-arrow-left text-infofa-2x"></i>Manage Vacatures</a> &nbsp; &nbsp;
 
 <h3>Edit Vacature</h3>
     <form action="{{asset('/update-job/'.$job->id)}}" method="POST">
-    <h3 class="lead mt-3 text-muted">Edit vacature</h3>
+    <h3 class="lead mt-3 text-muted">Pas vacature aan</h3>
     @csrf
     @if ($errors->any())
                     <div class="alert alert-danger">
@@ -51,11 +51,11 @@
                 </div>
         @endif
         <div class="form-group">
-            <label for="title">Title of vacature</label>
+            <label for="title">Titel van vacature</label>
             <input type="text" class="form-control" id="title" name="title" value="{{$job->name}}">
         </div>
         <div class="form-group">
-            <label for="city">Current city</label>
+            <label for="city">Huidige Stad</label>
             <select class="custom-select"  name="city">
             <option value="{{$job->city->id}}">{{$job->city->name}}</option>
             @foreach($cities as $city)
@@ -64,7 +64,7 @@
             </select>
         </div>
         <div class="form-group">
-            <label for="city">Cureent category</label>
+            <label for="city">Huidige Branche</label>
             <select class="custom-select"  name="category">
             <option value="{{$job->category->id}}">{{$job->category->name}}</option>
             @foreach($categories as $cat)
@@ -73,15 +73,15 @@
             </select>
         </div>
         <div class="form-group">
-            <label for="desc1">Description 1</label>
+            <label for="desc1">Beschrijving 1</label>
             <textarea class="form-control" rows="4" id="desc1" name="desc1">{{$job->desc1}}</textarea>   
         </div>
         <div class="form-group">
-            <label for="desc2">Description 2</label>
+            <label for="desc2">Beschrijving 2</label>
             <textarea class="form-control" rows="4" id="desc2" name="desc2">{{$job->desc2}}</textarea>   
         </div>
         <div class="form-group">
-            <label for="desc3">Description 3</label>
+            <label for="desc3">Beschrijving 3</label>
             <textarea class="form-control" rows="4" id="des3" name="desc3">{{$job->desc3}}</textarea>   
         </div>
         <div class="form-group">

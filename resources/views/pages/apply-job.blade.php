@@ -1,3 +1,4 @@
+@include('components.header')
 @include('components.header-banner')
 @include('components.nav')
 <div class="container">
@@ -7,7 +8,7 @@
       <!-- Post Content Column -->
       <div class="col-lg-8 bg-white mt-4 pt-3 border">
         <button type="button" class="btn btn-primary my-2" onclick="goBack()">
-        <i class="fas fa-arrow-left"></i> Back
+        <i class="fas fa-arrow-left"></i> Terug
         </button>
         
         
@@ -31,24 +32,24 @@
             <form action="{{route('send-email')}}" method="POST" id="contactform">
                 @csrf
                 <div class="form-group">
-                    <label for="firstname">First Name</label>
+                    <label for="firstname">Voornaam</label>
                     <input type="text" class="form-control" id="firstname" name="firstname" placeholder="your name">
               
                 </div>
                 <div class="form-group">
-                    <label for="lastname">Last Name</label>
+                    <label for="lastname">Achternaam</label>
                     <input type="text" class="form-control" id="lastname" name="lastname" placeholder="your last name">
                 </div>
                 <div class="form-group">
-                    <label for="email">Email address</label>
+                    <label for="email">Email adres</label>
                     <input type="email" class="form-control" id="email" name="email" placeholder="your email address">
                 </div>
                 <div class="form-group">
-                    <label for="cv">If you have CV send to Us</label>
+                    <label for="cv">Voeg hier uw CV toe</label>
                     <input type="file" class="form-control" id="cv"  name="cv" placeholder="name@example.com">
                 </div>      
-                <button type="submit" class="btn btn-primary btn-block">Send</button>
-                <p class="small">We will reply as soon as possible</p>
+                <button type="submit" class="btn btn-primary btn-block">Verzenden</button>
+                <p class="small">Wij zullen zo spoedig mogelijk met u contact opnemen!</p>
                 <input type="hidden" name="jobname" value="{{$job->name}}">
                 <input type="hidden" name="jobid" value="{{$job->id}}">
                 <input type="hidden" name="category" value="{{$job->category->name}}">
@@ -56,10 +57,9 @@
             </form>
             <!-- Title -->
             <h1 class="mt-4"> {{$job->name}}<img class="img-fluid rounded" width="55" src="{{asset('/')}}img/bag.jpg" alt="hoop4eu vacature"></h1>
-                <h4>#idVacature:{{$job->id}}</h4>
                 <!-- Author -->
                 <p class="lead">
-                <i class="fas fa-city  text-warning"></i> City: {{$job->city->name}} &nbsp;&nbsp; <i class="fas fa-sort  text-warning"></i> Category: {{$job->category->name}}
+                <i class="fas fa-city  text-warning"></i> Stad: {{$job->city->name}} &nbsp;&nbsp; <i class="fas fa-sort  text-warning"></i> Branche: {{$job->category->name}}
                 </p>
            
         <hr>
@@ -93,9 +93,9 @@
                         <p class="card-text">{{$js->desc1}}</p>
                         <i class="fas fa-clock text-info"></i> Full time : {{$js->fulltime ? 'Yes' : 'No'}} &nbsp;
                         <i class="fas fa-clock text-info"></i> Parttime time : {{$js->parttime ? 'Yes' : 'No'}} &nbsp;
-                        <i class="fas fa-clock text-info"></i> Tijdelijk time : {{$js->tijdelijk ? 'Yes' : 'No'}} &nbsp;<br>
-                        City: {{$js->city->name}} 
-                    <strong class="d-block text-primary lead">Category: {{$js->category->name}}</strong><br>
+                        <i class="fas fa-clock text-info"></i> Tijdelijk  : {{$js->tijdelijk ? 'Yes' : 'No'}} &nbsp;<br>
+                        Stad: {{$js->city->name}} 
+                    <strong class="d-block text-primary lead">Branche: {{$js->category->name}}</strong><br>
                     <a href="{{asset('/job/'.$job->id)}}" class="btn btn-primary">Zie meer</a><br>
                     {{$js->created_at->format('d-m-Y')}}
                     </div>

@@ -1,3 +1,5 @@
+
+@include('components.header')
 @extends('layouts.app')
 
 @section('content')
@@ -26,13 +28,13 @@
         @include('components.admin.sidebar')
     </div>
     <div class="col-lg-10 bg-white border p-3">
-    <a href="{{route('home-admin')}}" class="lead"><i class="fas fa-plus-circle fa-2x text-info"></i>Add new Vacature</a> &nbsp; &nbsp;
+    <a href="{{route('home-admin')}}" class="lead"><i class="fas fa-plus-circle fa-2x text-info"></i>Voeg nieuwe Vacature toe</a> &nbsp; &nbsp;
     @if(session('success'))
                 <div class="alert alert-success">
                     {{session('success')}}
                 </div>
     @endif
-    <h2>Filterable Table for Jobs</h2>
+    <h2>Filter hier uw vacatures</h2>
     <p>Type something for searching you Jobs</p>  
     <input class="form-control" id="myInput" type="text" placeholder="Search..">
     <br>
@@ -40,10 +42,10 @@
                 <thead>
                     <tr>
                     <th scope="col">#ID</th>
-                    <th scope="col">Vacature Name</th>
-                    <th scope="col">Category Name</th>
-                    <th scope="col">City Name</th>
-                    <th scope="col">Posted on</th>
+                    <th scope="col">Vacature naam</th>
+                    <th scope="col">Branche naam</th>
+                    <th scope="col">Stad naam</th>
+                    <th scope="col">Geplaatst op</th>
                     <th scope="col">Zie meer</th>
                     <th scope="col">Delete</th>
                     <th scope="col">Edit</th>

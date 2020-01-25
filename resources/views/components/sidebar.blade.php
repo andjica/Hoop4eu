@@ -31,11 +31,11 @@
         </div>
         <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
+            <span class="sr-only">Vorige</span>
         </a>
         <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
+            <span class="sr-only">Volgende</span>
         </a>
     </div>
     <!-- End Slider -->
@@ -47,8 +47,8 @@
         <div class="p-3 bg-light rounded mt-5">
             <h4 class="font-italic">Over Ons</h4>
             <p class="mb-0">Hoop 4 EU verzorgt uitzending en werving & selectie van vakkundig personeel 
-                oor functies binnen Techniek, Bouw, Logistiek, Office en Onderwijs. </p>
-                <a href="">Zie meer</a>
+                voor functies binnen Techniek, Bouw, Logistiek, Office en Onderwijs. </p>
+                <a href="{{asset('/over-ons')}}">Zie meer</a>
             </div>
         </div>
    <!-- End Over Ons -->

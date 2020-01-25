@@ -7,7 +7,7 @@
  
 <div style="height:100%">
 <div style="background:#f5f2e4; width:50%; padding:10px;">
-    <p><b>This is a new interested user:</b>  {{$data['firstname']}} {{$data['lastname']}}<br>
+    <p><b>Er is een nieuwe kandidaat die zich heeft aangemeld:</b>  {{$data['firstname']}} {{$data['lastname']}}<br>
     <b>Contact message: {{$data['message']}}<br>
     <b></b></p>
 </div>

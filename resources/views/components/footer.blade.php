@@ -10,7 +10,7 @@
 
         <!-- Grid column -->
         <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-          <h6 class="mb-0">Get connected with us on social networks!</h6>
+          <h6 class="mb-0">Bekijk ons ook via onze social media kanalen!</h6>
         </div>
         <!-- Grid column -->
 
@@ -68,19 +68,19 @@
       <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
 
         <!-- Links -->
-        <h6 class="text-uppercase font-weight-bold">Products</h6>
+        <h6 class="text-uppercase font-weight-bold">Hoop4 EU Links</h6>
         <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
         <p>
-          <a href="{{route('vacatures-none')}}">Vacatures</a>
+          <a href="{{route('vacatures-none')}}">Onze Vacatures</a>
         </p>
         <p>
-          <a href="#!">Lorem lorem</a>
+          <a href="../public/contact">Zakelijk Contact</a>
         </p>
         <p>
-          <a href="#!">Lorem</a>
+          <a href="../public/over-ons">Over Hoop4eu</a>
         </p>
         <p>
-          <a href="#!">Bootstrap Angular</a>
+          <a href="../public/contact">Contact</a>
         </p>
 
       </div>
@@ -90,19 +90,19 @@
       <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
 
         <!-- Links -->
-        <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+        <h6 class="text-uppercase font-weight-bold">Actuele Vacatures</h6>
         <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
         <p>
-          <a href="#!">Your Account</a>
+          <a href="../public/vacatures-none">IT- Vacatures</a>
         </p>
         <p>
-          <a href="#!">Become an Affiliate</a>
+          <a href="../public/vacatures-none">Techniek Vacatures</a>
         </p>
         <p>
-          <a href="#!">Shipping Rates</a>
+          <a href="../public/vacatures-none">Zorg Vacatures</a>
         </p>
         <p>
-          <a href="#!">Help</a>
+          <a href="../public/vacatures-none">Alle Vacatures</a>
         </p>
 
       </div>
@@ -117,12 +117,11 @@
         <p>
           <i class="fas fa-home mr-3"></i> Deventerseweg 50, 2994LD Barendrecht</p>
         <p>
-          <i class="fas fa-envelope mr-3"></i><a class="text-muted" href="mailto: abc@example.com">Email: info@hoop4.eu</a></p>
+          <i class="fas fa-envelope mr-3"></i><a class="text-muted" href="mailto: info@hoop4eu.com">Email: info@hoop4eu.com </a></p>
         <p>
           <i class="fas fa-phone mr-3"></i> + 31 (0) 0180 – 531191</p>
-        <p>
-          <i class="fas fa-print mr-3"></i> + 31 (0) 0180 – 531192</p>
-
+     
+         
       </div>
       <!-- Grid column -->
 
@@ -155,7 +154,6 @@
   <script src="{{asset('/')}}/js/back.js"></script>
   <script src="{{asset('/')}}/js/search-table.js"></script>
   <script src="{{asset('/')}}/js/scroll-search.js"></script>
-
 </body>
 
 </html>
