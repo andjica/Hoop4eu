@@ -7,9 +7,11 @@
             <a class="blog-header-logo text-dark" href="{{asset('/')}}"><img src="{{asset('/')}}img/logo4.jpg" class="img-fluid logo-hoop"></a>
          </div> 
           <div class="col-10 pt-3 text-right">
-          <div class="d-inline small"> <b class="text-info">Hoop 4 EU B.V.</b> &nbsp; &nbsp;<i class="fas fa-phone text-warning"></i> Telefoon: 0180 – 531191, &nbsp; <i class="fas fa-map-marker-alt text-warning"></i> Deventerseweg 50, 2994LD Barendrecht </div>
-            
-            <a class="text-muted small" href="mailto: abc@example.com">Email: info@hoop4eu.com</a><br>
+          <div class="d-inline small"> <b class="text-info">Hoop 4 EU B.V.</b> &nbsp; &nbsp;<i class="fas fa-phone text-warning"></i> Telefoon: 0180 – 531191, &nbsp; <i class="fas fa-map-marker-alt text-warning"></i> Deventerseweg 50, 2994LD Barendrecht
+          <a class="text-muted small" href="mailto: info@hoop4.eu">Email: info@hoop4.eu</a><br>
+            <a class="text-muted small" href="mailto: info@hoop4eu.com">Email: info@hoop4eu.com</a><br>
+           </div>
+ 
             </div>
         </div>
       </header>

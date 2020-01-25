@@ -117,7 +117,9 @@
         <p>
           <i class="fas fa-home mr-3"></i> Deventerseweg 50, 2994LD Barendrecht</p>
         <p>
-          <i class="fas fa-envelope mr-3"></i><a class="text-muted" href="mailto: info@hoop4eu.com">Email: info@hoop4eu.com </a></p>
+        <i class="fas fa-envelope mr-3"></i><a class="text-muted" href="mailto: info@hoop4.eu">Email: info@hoop4.eu </a> <br>
+          <i class="fas fa-envelope mr-3"></i><a class="text-muted" href="mailto: info@hoop4eu.com">Email: info@hoop4eu.com </a>
+        </p>
         <p>
           <i class="fas fa-phone mr-3"></i> + 31 (0) 0180 – 531191</p>
      
