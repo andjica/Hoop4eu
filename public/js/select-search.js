@@ -1,11 +1,11 @@
  // select2 
  $('.js-example-basic-single').select2({
-    placeholder: "Select city",
+    placeholder: "Selecteer een stad",
     allowClear: true
   });
   // select2
   $('.js-example-basic-single2').select2({
-    placeholder: "Select category",
+    placeholder: "Selecteer een branche",
     allowClear: true
   });
 

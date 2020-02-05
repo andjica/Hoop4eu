@@ -9,7 +9,7 @@
             
         </div>
             <div class="col-lg-8 pt-5">
-            <h6 class="border-bottom border-gray pb-2 pt-5 pb-3 pl-3 mb-0 text-info">City: {{$city->name}} > &nbsp;Category: {{$category->name}}</h6>
+            <h6 class="border-bottom border-gray pb-2 pt-5 pb-3 pl-3 mb-0 text-info">Stad: {{$city->name}} > &nbsp;Branche: {{$category->name}}</h6>
             </div>
         </div>
     </div>
@@ -61,7 +61,7 @@
                     <label class="custom-control-label" for="customCheck3"><i class="fas fa-history text-warning"></i> &nbsp;Tijdelijk</label>
                     </div>
             </div>
-            <button type="submit" class="btn btn-info btn-lg wrn-btn mt-2"><i class="fas fa-search  text-white"></i>Zoek naar Vacatures</button>
+            <button type="submit" class="btn btn-info btn-lg wrn-btn mt-2 text-white">Zoek naar Vacatures</button>
             </form>
                 </div>
             <div class="card mt-2 bg-light">
@@ -70,7 +70,7 @@
             <hr>
                 <div class="card-body ">
                 
-                <i class="fas fa-phone text-warning"></i> D-inlineTelefoon: <br> 0180 – 531191, <br><br>
+                <i class="fas fa-phone text-warning"></i> Telefoon:  0180 – 531191 <br><br>
                 <i class="fas fa-map-marker-alt text-warning"></i> Deventerseweg 50, 2994LD Barendrecht <br><br>
                 <a href="https://www.facebook.com/Hoop4eu/"><i class="fab fa-facebook-square fa-2x text-primary"></i></a> &nbsp;  <a href="https://twitter.com/hoop4eu"><i class="fab fa-twitter-square fa-2x text-info"></i> </a> &nbsp; 
                 <a href="https://www.linkedin.com/company/hoop-4-eu"><i class="fa fa-linkedin fa-2x text-primary"></i> </a><a href="https://www.youtube.com/channel/UCt84MgIuZcf0_va3atJCYjA"> &nbsp; <i class="fa fa-youtube-square fa-2x text-danger"></i></a>
@@ -81,9 +81,9 @@
                 <div class="card-body">
                 
                 <h4 class="font-italic">Over Ons</h4>
-                    <p class="mb-0">Hoop 4 EU verzorgt uitzending en werving & selectie van vakkundig personeel 
-                oor functies binnen Techniek, Bouw, Logistiek, Office en Onderwijs. </p>
-                <a href="{{asset('/over-ons')}}">Zie meer</a>
+                <p class="mb-0">Hoop 4 EU verzorgt uitzending en werving & selectie van vakkundig personeel 
+                voor functies binnen Techniek, Bouw, Logistiek, Office en Onderwijs. Dankzij onze vernieuwende recruitment proces, zijn wij de beste partij voor het bemiddelen van vakkundig personeel </p>
+                <a href="{{asset('/over-ons')}}">Reageer op vacature</a>
                 </div>
                 </div>
             </div>
@@ -112,15 +112,15 @@
                    <img src="{{asset('/img-categories/'.$job->category->img)}}" alt="{{$job->category->name}}" class="mr-2 rounded" width="45px">  
                    
                     </h5>
-                    <strong class=" text-primary lead">Category: {{$job->category->name}}</strong><br>
+                    <strong class=" text-primary lead">Branche: {{$job->category->name}}</strong><br>
                     <p class="card-title"></p>
 
                    <p class="card-text">{{$job->desc1}}</p>
-                   <i class="fas fa-clock text-info"></i> Full time : {{$job->fulltime ? 'Yes' : 'No'}} &nbsp;
-                        <i class="fas fa-clock text-info"></i> Parttime time : {{$job->parttime ? 'Yes' : 'No'}} &nbsp;
-                        <i class="fas fa-clock text-info"></i> Tijdelijk time : {{$job->tijdelijk ? 'Yes' : 'No'}} &nbsp; <br><br>
-                        <p class="card-title"><i class="fas fa-map-marker-alt text-warning fa-2x"></i><b>City:</b> </i>{{$job->city->name}} </p>
-                    <a href="{{asset('/job/'.$job->id)}}" class="btn btn-info">Zie meer</a><br>
+                   <i class="fas fa-clock text-info"></i> Full time : {{$job->fulltime ? 'ja' : 'Nee'}} &nbsp;
+                        <i class="fas fa-clock text-info"></i> Parttime  : {{$job->parttime ? 'ja' : 'Nee'}} &nbsp;
+                        <i class="fas fa-clock text-info"></i> Tijdelijk  : {{$job->tijdelijk ? 'ja' : 'Nee'}} &nbsp; <br><br>
+                        <p class="card-title"><i class="fas fa-map-marker-alt text-warning fa-2x"></i><b>Stad:</b> </i>{{$job->city->name}} </p>
+                    <a href="{{asset('/job/'.$job->id)}}" class="btn btn-info">Reageer op vacature</a><br>
                 
                </div>
               

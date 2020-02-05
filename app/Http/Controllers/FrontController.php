@@ -23,6 +23,18 @@ class FrontController extends Controller
     public function get_vacatures()
     {
 
+        request()->validate([
+            'citysearch' => 'required',
+            'categorysearch' => 'required',
+           
+        ],
+        [
+            'citysearch.required' => 'Stad  is verplicht',
+            'categorysearch.required' => 'Branche is verplicht',
+            
+        ]);
+
+
         $cityId = request()->citysearch;
         $categoryId = request()->categorysearch;
 

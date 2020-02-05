@@ -1,4 +1,3 @@
-@include('components.header')
 @include('components.header-banner')
 @include('components.nav')
 <div class="container">
@@ -15,7 +14,7 @@
                 </div>
         @endif
         <button type="button" class="btn btn-primary my-2" onclick="goBack()">
-        <i class="fas fa-arrow-left"></i> Terug
+        <i class="fas fa-arrow-left"></i> Back
         </button>
      
         <!-- Title -->
@@ -26,7 +25,7 @@
         <i class="fas fa-city  text-warning"></i> City: {{$job->city->name}} &nbsp;&nbsp; <i class="fas fa-sort  text-warning"></i> Category: {{$job->category->name}} <br><br>
         <i class="fas fa-clock text-info"></i> Full time : {{$job->fulltime ? 'Yes' : 'No'}} &nbsp;
         <i class="fas fa-clock text-info"></i> Parttime time : {{$job->parttime ? 'Yes' : 'No'}} &nbsp;
-        <i class="fas fa-clock text-info"></i> Tijdelijk : {{$job->tijdelijk ? 'Yes' : 'No'}} &nbsp;
+        <i class="fas fa-clock text-info"></i> Tijdelijk time : {{$job->tijdelijk ? 'Yes' : 'No'}} &nbsp;
         </p>
 
         <hr>

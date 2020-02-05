@@ -8,9 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Hoop4EU | Vacatures - Altijd de meest actuele vacature aanbod in heel Nederland</title>
 
-
+  <title>Shop Homepage - Start Bootstrap Template</title>
 
   <!-- Bootstrap core CSS -->
   <link href="{{asset('/')}}vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">

@@ -26,10 +26,10 @@
         @include('components.admin.sidebar')
     </div>
     <div class="col-lg-7 bg-white border p-3">
-    <a href="{{route('home-cities')}}" class="lead"><i class="fas fa-arrow-left text-infofa-2x"></i>Manage steden</a> &nbsp; &nbsp;
+    <a href="{{route('home-cities')}}" class="lead"><i class="fas fa-arrow-left text-infofa-2x"></i>Manage cities</a> &nbsp; &nbsp;
 
             <form action="{{route('create-city')}}" method="POST">
-            <h3 class="lead mt-3 text-muted">stad toevoegen</h3>
+            <h3 class="lead mt-3 text-muted">Plaats toevoegen</h3>
             @csrf
                 @if ($errors->any())
                     <div class="alert alert-danger">
@@ -48,10 +48,10 @@
             <div class="form-group">
                 <label for="examplecity">City name</label>
                 <input type="text" class="form-control" id="city" name="city" aria-describedby="city" placeholder="Enter city">
-                <small id="emailHelp" class="form-text text-muted"></small>Voeg hier uw stad naam toe</small>
+                <small id="emailHelp" class="form-text text-muted">Entre city wich is in  Netherlands State</small>
                 
             </div>
-            <button type="submit" class="btn btn-primary">Voeg stad toe</button>
+            <button type="submit" class="btn btn-primary">Create city</button>
             </form>
                     <div>
                 </div>

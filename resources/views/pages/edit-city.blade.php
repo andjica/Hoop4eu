@@ -1,4 +1,3 @@
-@include('components.header')
 @extends('layouts.app')
 
 @section('content')
@@ -27,7 +26,7 @@
         @include('components.admin.sidebar')
     </div>
     <div class="col-lg-7 bg-white border p-3">
-    <a href="{{route('home-cities')}}" class="lead"><i class="fas fa-arrow-left text-infofa-2x"></i>Pas Stad aan</a> &nbsp; &nbsp;
+    <a href="{{route('home-cities')}}" class="lead"><i class="fas fa-arrow-left text-infofa-2x"></i>Manage cities</a> &nbsp; &nbsp;
 
             <form action="{{asset('/update-city/'.$city->id)}}" method="POST">
             <h3 class="lead mt-3 text-muted">Update Stad</h3>
@@ -47,9 +46,9 @@
                 </div>
                 @endif
             <div class="form-group">
-                <label for="examplecity">Stad naam</label>
+                <label for="examplecity">City name</label>
                 <input type="text" class="form-control" id="city" name="city" aria-describedby="city" value="{{$city->name}}">
-                <small id="emailHelp" class="form-text text-muted">Voeg een stad toe</small>
+                <small id="emailHelp" class="form-text text-muted">Entre city wich is in  Netherlands State</small>
                 <input type="hidden" value="{{$city->id}}" name="city-id">
             </div>
             <button type="submit" class="btn btn-primary">Stad bewerken</button>

@@ -15,7 +15,7 @@
             <div class="col-lg-8 bg-warning">
        
             <div class="my-3 p-3 bg-white rounded shadow-sm">
-                <h6 class="border-bottom border-gray pb-2 mb-0">Hot-Topic Vacatures</h6>
+                <h6 class="border-bottom border-gray pb-2 mb-0">Recent updates</h6>
                 @foreach($jobs as $job)
                 <div class="card mt-3 text-center mb-5">
                     <div class="card-header">
@@ -28,11 +28,11 @@
                         <p class="card-text">{{$job->desc1}}</p>
                         <i class="fas fa-clock text-info"></i> Full time : {{$job->fulltime ? 'Yes' : 'No'}} &nbsp;
                         <i class="fas fa-clock text-info"></i> Parttime time : {{$job->parttime ? 'Yes' : 'No'}} &nbsp;
-                        <i class="fas fa-clock text-info"></i> Deeltijd : {{$job->tijdelijk ? 'Yes' : 'No'}} &nbsp; <br>
+                        <i class="fas fa-clock text-info"></i> Tijdelijk time : {{$job->tijdelijk ? 'Yes' : 'No'}} &nbsp; <br>
                          <i class="fas fa-map-marker-alt text-primary"></i> {{$job->city->name}} 
-                        <strong class="d-block text-primary lead">Branche: {{$job->category->name}}</strong><br>
+                        <strong class="d-block text-primary lead">Category: {{$job->category->name}}</strong><br>
                         <a href="{{asset('/job/'.$job->id)}}" class="btn btn-primary">Zie meer</a><br>
-                        Geplaatst op: {{$job->created_at->format('d-m-Y')}}
+                        Posted on {{$job->created_at->format('d-m-Y')}}
                      
                     </div>
                    

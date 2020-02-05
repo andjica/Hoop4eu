@@ -8,7 +8,7 @@
             <div class="d-flex justify-content-between align-items-center w-100">
                 <strong class="text-gray-dark">{{$job->name}}</strong>
             </div>
-            <span class="d-block">Branches: {{$job->category->name}}</span>
+            <span class="d-block">Category: {{$job->category->name}}</span>
             </div>
         </div>
         </a>

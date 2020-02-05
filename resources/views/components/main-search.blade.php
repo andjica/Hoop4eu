@@ -1,4 +1,4 @@
-<section class="section-content mb-4   team-template header-mobile">
+<section class="section-content mb-4   team-template">
 <div class="container">
 
 
@@ -8,7 +8,7 @@
           
                 <div class="col-lg-12 p-5">
                 <h1 class="display-4 font-italic py-3">Jouw carrière begint hier!</h1>
-                <p class="text-muted py-3">Zie hieronder al onze Vacatures</p>
+                <p class="text-muted py-3">Zoeken van 25 vacatures</p>
     
                     <div class="row my-3 pt-5">
                     <div class="col-lg-4 col-md-4 col-sm-8 p-0">
@@ -32,7 +32,7 @@
                             </select>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-8 p-0">
-                            <button type="submit" class="btn wrn-btn">Zoek Vacatures</button>
+                            <button type="submit" class="btn wrn-btn">Search</button>
                         </div>
                         </form>
                     </div>

@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    U bent ingelogd
+                    You are logged in!
                 </div>
             </div>
         </div>
@@ -26,24 +26,24 @@
         @include('components.admin.sidebar')
     </div>
     <div class="col-lg-7 bg-white border p-3">
-    <a href="{{route('home-create-category')}}" class="lead"><i class="fas fa-plus-circle fa-2x text-info"></i>Voeg een Brance toe</a> &nbsp; &nbsp;
+    <a href="{{route('home-create-category')}}" class="lead"><i class="fas fa-plus-circle fa-2x text-info"></i>Add new Category</a> &nbsp; &nbsp;
     @if(session('success'))
                 <div class="alert alert-success">
                     {{session('success')}}
                 </div>
     @endif
-    <h2>Snelle zoekopdracht voor uw branche</h2>
-    <p>Type hier uw zoekopdracht</p>  
+    <h2>Filterable Table for Category</h2>
+    <p>Type something for searching you category</p>  
     <input class="form-control" id="myInput" type="text" placeholder="Search..">
     <br>
         <table class="table table-bordered">
                 <thead>
                     <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Branche </th>
-                    <th scope="col">Foto</th>
+                    <th scope="col">Category name</th>
+                    <th scope="col">Image</th>
                     <th scope="col">Delete</th>
-                    <th scope="col">Aanpassen</th>
+                    <th scope="col">Edit</th>
                     </tr>
                 </thead>
                 <tbody id="myTable">

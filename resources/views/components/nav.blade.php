@@ -1,24 +1,22 @@
   <!-- Navigation -->
-  <div class="container p12 border-bottom">
-      <header class="blog-header"><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <div class="container p12">
+      <header class="blog-header">
         <div class="row">
          
         <div class="col-2">
             <a class="blog-header-logo text-dark" href="{{asset('/')}}"><img src="{{asset('/')}}img/logo4.jpg" class="img-fluid logo-hoop"></a>
          </div> 
           <div class="col-10 pt-3 text-right">
-          <div class="d-inline small"> <b class="text-info">Hoop 4 EU B.V.</b> &nbsp; &nbsp;<i class="fas fa-phone text-warning"></i> Telefoon: 0180 – 531191, &nbsp; <i class="fas fa-map-marker-alt text-warning"></i> Deventerseweg 50, 2994LD Barendrecht
-          <a class="text-muted small" href="mailto: info@hoop4.eu">Email: info@hoop4.eu</a><br>
-            <a class="text-muted small" href="mailto: info@hoop4eu.com">Email: info@hoop4eu.com</a><br>
-           </div>
- 
+          <div class="d-inline small"> <b class="text-info">Hoop 4 EU B.V.</b> &nbsp; &nbsp;<i class="fas fa-phone text-warning"></i> D-inlineTelefoon: 0180 – 531191, &nbsp; <i class="fas fa-map-marker-alt text-warning"></i> Deventerseweg 50, 2994LD Barendrecht </div>
+            
+            <a class="text-muted small" href="mailto: abc@example.com">Email: info@hoop4.eu</a><br>
             </div>
         </div>
       </header>
       </div>
-     
-  <nav class="navbar navbar-expand-lg navbar-light  shadow-sm">
-  <a href="{{asset('/')}}" class="navbar-brand text-white font-weight-bold d-block d-lg-none"><img src="{{asset('/')}}img/logo4.jpg" class="img-fluid logo-hoop"></a>
+      <hr>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <a href="#" class="navbar-brand text-white font-weight-bold d-block d-lg-none">MegaMenu</a>
   <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
           <span class="navbar-toggler-icon"></span>
       </button>
@@ -33,27 +31,18 @@
                 <div class="p-4">
                   <div class="row">
                     <div class="col-lg-6 mb-4">
-                    <h6 class="font-weight-bold text-uppercase"> ik Zoek Werk &nbsp;<i class="fas fa-search fa-2x text-info"></i></h6>
+                    <h6 class="font-weight-bold text-uppercase">ZOEK Werk &nbsp;<i class="fas fa-search fa-2x text-info"></i><i class="fas fa-user-md fa-2x text-info"></i></h6>
                       <ul class="list-unstyled">
                         <li class="nav-item"><a href="{{route('vacatures-none')}}" class="nav-link lead pb-0">Vacatures</a></li>
-                        <li class="nav-item"><a href="{{route('vacatures-none')}}" class="nav-link lead pb-0 ">IT-Vacatures</a></li>
-                        <li class="nav-item"><a href="{{route('vacatures-none')}}" class="nav-link lead pb-0 ">Zorg-Vacatures</a></li>
-                        <li class="nav-item"><a href="{{route('vacatures-none')}}" class="nav-link lead pb-0 ">Techniek-Vacatures</a></li>
-                        <li class="nav-item"><a href="{{route('vacatures-none')}}" class="nav-link lead pb-0 ">Bouw-Vacatures</a></li>
-                        <li class="nav-item"><a href="{{route('vacatures-none')}}" class="nav-link lead pb-0 ">Engeneering-Vacatures</a></li>
-                        <li class="nav-item"><a href="{{route('vacatures-none')}}" class="nav-link lead pb-0 ">Overige-Vacatures</a></li>
-                        <li class="nav-item"><a href="{{route('vacatures-none')}}" class="nav-link lead pb-0 ">Alle-Vacatures</a></li>
-                        
-
+                        <li class="nav-item"><a href="" class="nav-link lead pb-0 ">Ik ben uitzendkracht</a></li>
+                        <li class="nav-item"><a href="" class="nav-link lead pb-0 ">Inschrijven / Open sollicitatie</a></li>
                       </ul>
                     </div>
                     <div class="col-lg-6 mb-4">
-                      <h6 class="font-weight-bold text-uppercase"> &nbsp; Hoop4eu info<i class="fas fa-business-time fa-2x text-info"></i></h6>
+                      <h6 class="font-weight-bold text-uppercase"> &nbsp;<i class="fas fa-business-time fa-2x text-info"></i><i class="fas fa-user-tie fa-2x text-info"></i></h6>
                       <ul class="list-unstyled">
-                        <li class="nav-item"><a href="../public/over-ons" class="nav-link lead pb-0 ">Over ons </a></li>
-                        <li class="nav-item"><a href="../public/contact" class="nav-link lead pb-0 ">Contact</a></li>
-                   
-                       
+                        <li class="nav-item"><a href="" class="nav-link lead pb-0 ">Ik ben ZZP’er </a></li>
+                        <li class="nav-item"><a href="" class="nav-link lead pb-0 ">Vacature alert</a></li>
                       </ul>
                     </div>
                 
@@ -66,10 +55,9 @@
           </div>
         </div>
       </li>
-      <li class="nav-item"><a href="{{route('contact')}}" class="nav-link font-weight-bold text-uppercase">AAnmelden als werkzoekende</a></li>
-      <li class="nav-item"><a href="../public/over-ons" class="nav-link font-weight-bold text-uppercase">OVER HOOP4EU</a></li>
+      <li class="nav-item"><a href="" class="nav-link font-weight-bold text-uppercase">IK ZOEK PERSONEEL</a></li>
+      <li class="nav-item"><a href="" class="nav-link font-weight-bold text-uppercase">WIE ZIJN WIJ</a></li>
       <li class="nav-item"><a href="{{route('contact')}}" class="nav-link font-weight-bold text-uppercase">Contact</a></li>
-      
       @if (auth()->user())
       <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

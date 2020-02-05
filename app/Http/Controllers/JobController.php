@@ -33,7 +33,7 @@ class JobController extends Controller
             'title' => 'required',
             'city' => 'required',
             'category' => 'required',
-            'desc1' => 'required|min:65|max:250',
+            'desc1' => 'required|max:250',
             'desc2' => 'required',
             'title1' => 'required',
             'title2' => 'required',
@@ -54,6 +54,8 @@ class JobController extends Controller
         $job->desc2 = request()->desc2;
         $job->desc3 = request()->desc3;
         $job->desc4 = request()->desc4;
+        $job->desc5 = request()->desc5;
+        $job->desc6 = request()->desc6;
         $job->fulltime = request()->fulltime ? true : false;
         $job->parttime = request()->parttime ? true : false;
         $job->tijdelijk = request()->tijdelijk ? true : false;
@@ -159,6 +161,8 @@ class JobController extends Controller
         $job->desc2 = request()->desc2;
         $job->desc3 = request()->desc3;
         $job->desc4 = request()->desc4;
+        $job->desc5 = request()->desc5;
+        $job->desc6 = request()->desc6;
         $job->fulltime = request()->fulltime ? true : false;
         $job->parttime = request()->parttime ? true : false;
         $job->tijdelijk = request()->tijdelijk ? true : false;

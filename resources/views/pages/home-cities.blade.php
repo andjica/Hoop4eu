@@ -26,23 +26,23 @@
         @include('components.admin.sidebar')
     </div>
     <div class="col-lg-7 bg-white border p-3">
-    <a href="{{route('home-create-city')}}" class="lead"><i class="fas fa-plus-circle fa-2x text-info"></i>Voeg een nieuwe Stad toe</a> &nbsp; &nbsp;
+    <a href="{{route('home-create-city')}}" class="lead"><i class="fas fa-plus-circle fa-2x text-info"></i>Add new City</a> &nbsp; &nbsp;
     @if(session('success'))
                 <div class="alert alert-success">
                     {{session('success')}}
                 </div>
     @endif
-    <h2>Filter naar uw gewenste stad</h2>
-    <p>Zoek hier uw stad....</p>  
+    <h2>Filterable Table for City</h2>
+    <p>Type something for searching you Cities</p>  
     <input class="form-control" id="myInput" type="text" placeholder="Search..">
     <br>
         <table class="table table-bordered">
                 <thead>
                     <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Stad naam</th>
+                    <th scope="col">City Name</th>
                     <th scope="col">Delete</th>
-                    <th scope="col">Pas stad aan</th>
+                    <th scope="col">Edit</th>
                     </tr>
                 </thead>
                 <tbody id="myTable">

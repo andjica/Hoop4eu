@@ -20,6 +20,8 @@ class CreateJobsTable extends Migration
             $table->text('desc2');
             $table->text('desc3')->nullable();
             $table->text('desc4')->nullable();
+            $table->text('desc5')->nullable();
+            $table->text('desc6')->nullable();
             $table->boolean('fulltime');
             $table->boolean('parttime');
             $table->boolean('tijdelijk');
