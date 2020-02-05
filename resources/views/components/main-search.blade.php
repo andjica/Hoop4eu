@@ -37,7 +37,6 @@
                             <button type="submit" class="btn wrn-btn">Search</button>
                         </div>
                         </form>
-                        <!-- forma -->
                     </div>
                 </div>
             </div>
