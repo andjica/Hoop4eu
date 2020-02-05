@@ -1,3 +1,4 @@
+@include('components.header')
 @include('components.header-banner')
 @include('components.nav')
 <div class="container">
@@ -14,31 +15,31 @@
                 </div>
         @endif
         <button type="button" class="btn btn-primary my-2" onclick="goBack()">
-        <i class="fas fa-arrow-left"></i> Back
+        <i class="fas fa-arrow-left"></i> Terug
         </button>
      
         <!-- Title -->
         <h1 class="mt-4"> {{$job->name}}<img class="img-fluid rounded" width="55" src="{{asset('/')}}img/bag.jpg" alt="hoop4eu vacature"></h1>
-        <h4>#idVacature:{{$job->id}}</h4>
+        <h4>Vacature-nummer:{{$job->id}}</h4>
         <!-- Author -->
         <p class="lead">
-        <i class="fas fa-city  text-warning"></i> City: {{$job->city->name}} &nbsp;&nbsp; <i class="fas fa-sort  text-warning"></i> Category: {{$job->category->name}} <br><br>
-        <i class="fas fa-clock text-info"></i> Full time : {{$job->fulltime ? 'Yes' : 'No'}} &nbsp;
-        <i class="fas fa-clock text-info"></i> Parttime time : {{$job->parttime ? 'Yes' : 'No'}} &nbsp;
-        <i class="fas fa-clock text-info"></i> Tijdelijk time : {{$job->tijdelijk ? 'Yes' : 'No'}} &nbsp;
+        <i class="fas fa-city  text-warning"></i> Stad: {{$job->city->name}} &nbsp;&nbsp; <i class="fas fa-sort  text-warning"></i> Branche: {{$job->category->name}} <br><br>
+        <i class="fas fa-clock text-info"></i> Full time : {{$job->fulltime ? 'ja' : 'Nee'}} &nbsp;
+        <i class="fas fa-clock text-info"></i> Parttime  : {{$job->parttime ? 'ja' : 'Nee'}} &nbsp;
+        <i class="fas fa-clock text-info"></i> Tijdelijk : {{$job->tijdelijk ? 'ja' : 'Nee'}} &nbsp;
         </p>
 
         <hr>
 
         <!-- Date/Time -->
-        <p>Posted on {{$job->created_at->format('d-m-Y')}}</p>
+        <p>Geplaatst op  {{$job->created_at->format('d-m-Y')}}</p>
     
         @if (auth()->user())
-            <a href="{{asset('/delete-job/'.$job->id)}}" class="btn btn-danger"><i class="fas fa-trash-alt text-white"></i>&nbsp;Delete job</a>
-            <a href="{{asset('/edit-job/'.$job->id)}}" class="btn btn-warning">Update this job</a>
+            <a href="{{asset('/delete-job/'.$job->id)}}" class="btn btn-danger"><i class="fas fa-trash-alt text-white"></i>&nbsp;Verwijder vacature</a>
+            <a href="{{asset('/edit-job/'.$job->id)}}" class="btn btn-warning">Pas vacature aan</a>
          @else
         <button type="button" id="apply" class="btn btn-info search-slt2 btn-lg btn-block" data-toggle="modal" data-target="#exampleModalCenter">
-        Apply for a job
+        Reageer op vacature
       </button>
       @endif
       
@@ -57,19 +58,19 @@
                 <input type="hidden" name="jobname" value="{{$job->name}}">
                 <input type="hidden" name="jobid" value="{{$job->id}}">
                 <div class="form-group">
-                    <label for="exampleFormControlInput1">First Name</label>
-                    <input type="text" class="form-control" id="firstName" placeholder="Andjela" name="firstname">
+                    <label for="exampleFormControlInput1">Voornaam</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Voornaam" name="firstname">
                 </div>
                 <div class="form-group">
-                    <label for="exampleFormControlInput1">Last Name</label>
-                    <input type="text" class="form-control" id="lastName" placeholder="Stojanovic" name="lastname">
+                    <label for="exampleFormControlInput1">Achternaam</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Achternaam" name="lastname">
                 </div>
                 <div class="form-group">
-                    <label for="exampleFormControlInput1">Email address</label>
-                    <input type="email" class="form-control" id="email-add" placeholder="andjela@example.com" name="email">
+                    <label for="exampleFormControlInput1">Email adres</label>
+                    <input type="email" class="form-control" id="email-add" placeholder="Email adres" name="email">
                 </div>
                 <div class="form-group">
-                    <label for="exampleFormControlInput1">If you have CV send to Us</label>
+                    <label for="exampleFormControlInput1">Upload hier je CV</label>
                     <input type="file" class="form-control" id="exampleFormControlInput1" name="pdffile" placeholder="name@example.com">
                 </div>
             <input type="hidden" name="category" value="{{$job->category->name}}">
@@ -77,16 +78,16 @@
             </div>
             <div class="modal-body">
             <h3 class="mt-4"> {{$job->name}}<img class="img-fluid rounded" width="55" src="{{asset('/')}}img/bag.jpg" alt="hoop4eu vacature"></h3>
-            <h4>#idVacature:  {{$job->id}}</h4>
+            <h4>Vacature-nummer:  {{$job->id}}</h4>
                 <!-- Author -->
                 <p class="lead">
-                <i class="fas fa-city  text-warning"></i> City: {{$job->city->name}} &nbsp;&nbsp; <i class="fas fa-sort  text-warning"></i> Category: {{$job->category->name}}
+                <i class="fas fa-city  text-warning"></i> Stad: {{$job->city->name}} &nbsp;&nbsp; <i class="fas fa-sort  text-warning"></i> Branche: {{$job->category->name}}
                 </p>
             </div>
           
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="submit" id="job-apply-popup"class="btn btn-primary">Apply for a job</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Sluiten</button>
+                <button type="submit" id="job-apply-popup"class="btn btn-primary">Solliciteer voor functie</button>
             </div>
             </div>
         </div>
@@ -94,7 +95,7 @@
         </div>
 
         <!-- Post Content -->
-        <p class="lead">{{$job->desc1}}</p>
+        <p>{{$job->desc1}}</p>
         <p>{{$job->desc2}} </p>
         <p>{{$job->desc3}} </p>
         <ul class="list-group list-group-flush pt-3 pb-3">
@@ -107,12 +108,10 @@
 
             @endforeach
             </ul>
-        <blockquote class="blockquote">
-          <p class="mb-0 lead">{{$job->desc4}}</p>
-          <footer class="blockquote-footer">Posted by 
-            <cite title="Source Title">Hoop4eu on {{$job->created_at->format('d-m-Y')}}</cite>
-          </footer>
-        </blockquote>
+        
+            <p>{{$job->desc4}}</p>
+            <p>{{$job->desc5}}</p>
+            <p>{{$job->desc6}}</p>
        
         <hr>
 
@@ -131,14 +130,14 @@
                     <div class="card-body">
                     <img src="{{asset('/')}}img/bag.jpg" alt="" class="mr-2 rounded" width="45">                        
                     <p class="card-text">{{$onejob->desc1}}</p>
-                        <i class="fas fa-clock text-info"></i> Full time : {{$onejob->fulltime ? 'Yes' : 'No'}} &nbsp;
-                        <i class="fas fa-clock text-info"></i> Parttime time : {{$onejob->parttime ? 'Yes' : 'No'}} &nbsp;
-                        <i class="fas fa-clock text-info"></i> Tijdelijk time : {{$onejob->tijdelijk ? 'Yes' : 'No'}} &nbsp;<br> 
-                        City: {{$onejob->city->name}}
-                        <strong class="d-block text-primary lead">Category: {{$onejob->category->name}}</strong><br>
-                        <a href="{{asset('/job/'.$onejob->id)}}" class="btn btn-primary">Zie meer</a><br>
+                        <i class="fas fa-clock text-info"></i> Full time : {{$onejob->fulltime ? 'ja' : 'Nee'}} &nbsp;
+                        <i class="fas fa-clock text-info"></i> Parttime  : {{$onejob->parttime ? 'ja' : 'Nee'}} &nbsp;
+                        <i class="fas fa-clock text-info"></i> Tijdelijk : {{$onejob->tijdelijk ? 'ja' : 'Nee'}} &nbsp;<br> 
+                        Stad: {{$onejob->city->name}}
+                        <strong class="d-block text-primary lead">Branche: {{$onejob->category->name}}</strong><br>
+                        <a href="{{asset('/job/'.$onejob->id)}}" class="btn btn-primary">Bekijk Vacature</a><br>
 
-                        Nov 12 2019
+                       
                     </div>
                
                 </div>
@@ -157,12 +156,12 @@
                     <div class="card-body">
                     <img src="{{asset('/')}}img/bag.jpg" alt="" class="mr-2 rounded" width="45">
                         <p class="card-text">{{$js->desc1}}</p>
-                        <i class="fas fa-clock text-info"></i> Full time : {{$js->fulltime ? 'Yes' : 'No'}} &nbsp;
-                        <i class="fas fa-clock text-info"></i> Parttime time : {{$js->parttime ? 'Yes' : 'No'}} &nbsp;
-                        <i class="fas fa-clock text-info"></i> Tijdelijk time : {{$js->tijdelijk ? 'Yes' : 'No'}} &nbsp;<br>
-                        City: {{$js->city->name}} 
-                    <strong class="d-block text-primary lead">Category: {{$js->category->name}}</strong><br>
-                    <a href="{{asset('/job/'.$job->id)}}" class="btn btn-primary">Zie meer</a><br>
+                        <i class="fas fa-clock text-info"></i> Full time : {{$js->fulltime ? 'ja' : 'nee'}} &nbsp;
+                        <i class="fas fa-clock text-info"></i> Part time  : {{$js->parttime ? 'ja' : 'nee'}} &nbsp;
+                        <i class="fas fa-clock text-info"></i> Tijdelijk  : {{$js->tijdelijk ? 'ja' : 'nee'}} &nbsp;<br>
+                        Stad: {{$js->city->name}} 
+                    <strong class="d-block text-primary lead">Branche: {{$js->category->name}}</strong><br>
+                    <a href="{{asset('/job/'.$job->id)}}" class="btn btn-primary">Bekijk vacature</a><br>
                     {{$js->created_at->format('d-m-Y')}}
                     </div>
                    

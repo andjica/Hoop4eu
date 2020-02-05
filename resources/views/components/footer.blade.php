@@ -10,7 +10,7 @@
 
         <!-- Grid column -->
         <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-          <h6 class="mb-0">Get connected with us on social networks!</h6>
+          <h6 class="mb-0">Bekijk ons ook via onze social media kanalen!</h6>
         </div>
         <!-- Grid column -->
 
@@ -18,23 +18,20 @@
         <div class="col-md-6 col-lg-7 text-center text-md-right">
 
           <!-- Facebook -->
-          <a class="fb-ic">
+          <a class="fb-ic" href="https://www.facebook.com/Hoop4eu/" style="color:white; font-size: 34px;">
             <i class="fab fa-facebook-f white-text mr-4"> </i>
           </a>
           <!-- Twitter -->
-          <a class="tw-ic">
+          <a class="tw-ic" href="https://twitter.com/hoop4eu" style="color:white; font-size: 34px;">
             <i class="fab fa-twitter white-text mr-4"> </i>
           </a>
           <!-- Google +-->
-          <a class="gplus-ic">
-            <i class="fab fa-google-plus-g white-text mr-4"> </i>
-          </a>
           <!--Linkedin -->
-          <a class="li-ic">
+          <a class="li-ic" href="https://www.linkedin.com/company/hoop-4-eu" style="color:white; font-size: 34px;" >
             <i class="fab fa-linkedin-in white-text mr-4"> </i>
           </a>
           <!--Instagram-->
-          <a class="ins-ic">
+          <a class="ins-ic" href="https://instagram.com/hoop4eu?igshid=13ads1lv0k51u" style="color:white; font-size: 34px;">
             <i class="fab fa-instagram white-text"> </i>
           </a>
 
@@ -59,8 +56,8 @@
         <!-- Content -->
         <h6 class="font-weight-bold">Hoop4eu</h6>
         <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-        <p>Hoop 4 EU verzorgt uitzending en werving & selectie van vakkundig personeel oor functies binnen Techniek, Bouw, Logistiek, Office en Onderwijs..</p>
-        <img src="{{asset('/')}}img/logo4.jpg" class="img-fluid logo-hoop">
+        <p>Hoop 4 EU verzorgt uitzending en werving & selectie van vakkundig personeel voor functies binnen Techniek, Bouw, Logistiek, Office en Onderwijs..</p>
+        <img src="{{asset('/')}}img/logo4.png" class="img-fluid logo-hoop">
       </div>
       <!-- Grid column -->
 
@@ -68,19 +65,19 @@
       <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
 
         <!-- Links -->
-        <h6 class="text-uppercase font-weight-bold">Products</h6>
+        <h6 class="text-uppercase font-weight-bold">Hoop4 EU Links</h6>
         <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
         <p>
-          <a href="{{route('vacatures-none')}}">Vacatures</a>
+          <a href="{{asset('/vacatures-none')}}">Onze Vacatures</a>
         </p>
         <p>
-          <a href="#!">Lorem lorem</a>
+          <a href="{{asset('/contact')}}">Zakelijk Contact</a>
         </p>
         <p>
-          <a href="#!">Lorem</a>
+          <a href="{{asset('/over-ons')}}">Over Hoop4eu</a>
         </p>
         <p>
-          <a href="#!">Bootstrap Angular</a>
+          <a href="{{asset('/contact')}}">Contact</a>
         </p>
 
       </div>
@@ -90,19 +87,19 @@
       <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
 
         <!-- Links -->
-        <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+        <h6 class="text-uppercase font-weight-bold">Actuele Vacatures</h6>
         <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
         <p>
-          <a href="#!">Your Account</a>
+          <a href="{{asset('/vacatures-none')}}">IT- Vacatures</a>
         </p>
         <p>
-          <a href="#!">Become an Affiliate</a>
+          <a href="{{asset('/vacatures-none')}}">Techniek Vacatures</a>
         </p>
         <p>
-          <a href="#!">Shipping Rates</a>
+          <a href="{{asset('/vacatures-none')}}">Zorg Vacatures</a>
         </p>
         <p>
-          <a href="#!">Help</a>
+          <a href="{{asset('/vacatures-none')}}">Alle Vacatures</a>
         </p>
 
       </div>
@@ -115,14 +112,19 @@
         <h6 class="text-uppercase font-weight-bold">Contact</h6>
         <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
         <p>
-          <i class="fas fa-home mr-3"></i> Deventerseweg 50, 2994LD Barendrecht</p>
+        <a href="tel:0180 – 531191"><i class="fas fa-phone text-warning" style="color:#17a2b8 !important; font-size: 20px; margin-right:12px;"></i></a> Telefoon: <a href="tel:0180 – 531191" style="color:black;">0180 – 531191 </a>
         <p>
-          <i class="fas fa-envelope mr-3"></i><a class="text-muted" href="mailto: abc@example.com">Email: info@hoop4.eu</a></p>
+      
+      
+           <a href="https://www.google.com/maps/place/Deventerseweg+50,+2994+LD+Barendrecht,+Nederland/@51.8623325,4.5110653,17z/data=!3m1!4b1!4m5!3m4!1s0x47c433ce0b4939cb:0x9ae14e5ce3cdd39c!8m2!3d51.8623325!4d4.513254"><i class="fas fa-map-marker-alt text-warning" style="color:#17a2b8 !important; margin-right: 16px; font-size: 20px;"></i></a> Adres: 
+           
+           <a href="https://www.google.com/maps/place/Deventerseweg+50,+2994+LD+Barendrecht,+Nederland/@51.8623325,4.5110653,17z/data=!3m1!4b1!4m5!3m4!1s0x47c433ce0b4939cb:0x9ae14e5ce3cdd39c!8m2!3d51.8623325!4d4.513254" style="margin-left: 0px;
+    color: black;">Deventerseweg 50, </a>  <a href="https://www.google.com/maps/place/Deventerseweg+50,+2994+LD+Barendrecht,+Nederland/@51.8623325,4.5110653,17z/data=!3m1!4b1!4m5!3m4!1s0x47c433ce0b4939cb:0x9ae14e5ce3cdd39c!8m2!3d51.8623325!4d4.513254" style="margin-left: 0px;
+    color: black; margin-left:35px;">2994LD Barendrecht </a>
         <p>
-          <i class="fas fa-phone mr-3"></i> + 31 (0) 0180 – 531191</p>
-        <p>
-          <i class="fas fa-print mr-3"></i> + 31 (0) 0180 – 531192</p>
-
+          <a href="tel:+ 31 (0) 0180 – 531191" ><i class="fas fa-envelope mr-3"  style="color:#17a2b8 !important; font-size: 20px; "></i></a>E-mail: <a href="mailto:info@hoop4.eu" style="color:black;">info@hoop4.eu</a></p>
+     
+         
       </div>
       <!-- Grid column -->
 
@@ -154,6 +156,7 @@
   <script src="{{asset('/')}}/js/slider.js"></script>
   <script src="{{asset('/')}}/js/back.js"></script>
   <script src="{{asset('/')}}/js/search-table.js"></script>
+  <script src="{{asset('/')}}/js/scroll-search.js"></script>
 </body>
 
 </html>

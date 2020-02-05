@@ -1,8 +1,6 @@
 
 <!------ Include the above in your HEAD tag ---------->
-<head>
-<title></title>
-</head>
+
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 <div class="aboutus-section">
         <div class="container">
@@ -13,7 +11,7 @@
                         <p class="aboutus-text">Wij geloven niet in één standaard oplossing - iedere organisatie heeft andere behoeften. Hierdoor zijn onze partnerships op maat af te stemmen. </p>
                         <p class="aboutus-text">Het aantrekken van externen, uiteenlopend van uitzendkrachten tot zelfstandig interim professionals, was de afgelopen jaren vaak alleen een inkoopaangelegenheid. Dat is aan het verschuiven. Van inkoop naar inhuur. En van aandacht voor puur inhuur naar meer aandacht voor inzet. Deze beweging zien we bij veel organisaties terug.
 Wij maken gebruik van een gigantisch netwerk van freelance IT specialisten waar wij zorgvuldig contact mee onderhouden. Op deze wijze kunnen wij de juiste specialist bij u introduceren op zeer korte termijn.</p>
-                        <a class="aboutus-more" href="#">read more</a>
+                        
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
@@ -114,7 +112,7 @@ a:hover, a:active {
     text-transform: uppercase;
 }
 .feature .feature-box .iconset {
-    background: #fff none repeat scroll 0 0;
+    background: none;
     float: left;
     position: relative;
     width: 18%;

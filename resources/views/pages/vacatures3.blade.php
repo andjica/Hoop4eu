@@ -68,7 +68,6 @@
             </form>
                 </div>
             <div class="card mt-2 bg-light">
-            
             <b class="text-info p-3">Hoop 4 EU B.V.</b>
             
             <hr>

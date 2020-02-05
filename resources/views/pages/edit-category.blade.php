@@ -29,7 +29,7 @@
     <a href="{{route('home-categories')}}" class="lead"><i class="fas fa-arrow-left text-infofa-2x"></i>Manage categories</a> &nbsp; &nbsp;
 
             <form action="{{asset('/update-category/'.$category->id)}}" method="POST" enctype="multipart/form-data">
-            <h3 class="lead mt-3 text-muted"> Update category </h3>
+            <h3 class="lead mt-3 text-muted"> Update branche </h3>
 
             @csrf
                 @if ($errors->any())
@@ -47,7 +47,7 @@
                 </div>
                 @endif
             <div class="form-group">
-                <label for="examplecategory">Category name</label>
+                <label for="examplecategory">Branche</label>
                 <input type="text" class="form-control" id="category" name="category" aria-describedby="category" value="{{$category->name}}">
                 <small id="cat" class="form-text text-muted">Entre category name(Economy, Marketing, Artist)</small>
             </div>
@@ -58,7 +58,7 @@
                 <input type="file" class="form-control" id="image" name="image" aria-describedby="img" value="{{$category->img}}">
                 
             </div>
-            <button type="submit" class="btn btn-primary">Update category</button>
+            <button type="submit" class="btn btn-primary">Update Branche</button>
             </form>
                     <div>
                 </div>

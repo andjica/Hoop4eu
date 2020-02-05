@@ -7,7 +7,7 @@
 <section class="section-content ">
 <div class="container border">
 
-   @include('components.over-ons')     
+   @include('components.blog')     
 
 </section>
 
