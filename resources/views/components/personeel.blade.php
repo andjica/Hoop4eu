@@ -42,8 +42,10 @@
         </div>
       </div>
       <div class="row no-gutters" style="height: 500px;">
-        <div class="col-lg-6 text-white showcase-img" style="background-image: url('../public/img/logo3.jpg'); background-size: contain;
-    background-repeat: no-repeat;"></div>
+        <div class="col-lg-6 text-white showcase-img" style="background-image: url('../public/img/logo4.png'); background-position-y: 234px;
+    background-repeat: no-repeat;
+    background-size: 320px;
+    background-position-x: 104px;"></div>
         <div class="col-lg-6 my-auto showcase-text">
           <h2>Hoop4 EU Winnaar in recruitment</h2>
           <p class="lead mb-0" style="padding: 20px">Hoop4EU is sparringpartner voor werkgevers met Commerciële, (Product)Marketing en Directie vacatures.

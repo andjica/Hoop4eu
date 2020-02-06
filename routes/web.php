@@ -28,6 +28,7 @@ Auth::routes();
 Route::get('/home-admin', 'HomeController@index')->name('home-admin');
 Route::get('/home-jobs', 'HomeController@jobs')->name('home-jobs');
 
+
 //return all cities and categories
 Route::get('/home-cities', 'HomeController@cities')->name('home-cities');
 Route::get('/home-categories', 'HomeController@categories')->name('home-categories');
@@ -80,3 +81,8 @@ Route::post('/contact/email', 'EmailController@contact')->name('contact-email');
 Route::get('/over-ons', function () {
     return view('pages.over-ons');
 });
+
+
+Route::get('/nieuwsoverzicht', 'FrontController@nieuwsoverzicht')->name('nieuwsoverzicht');
+Route::get('/blog', 'FrontController@blog')->name('blog');
+Route::get('/personeel', 'FrontController@personeel')->name('personeel');

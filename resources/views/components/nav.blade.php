@@ -98,23 +98,29 @@
 
                     <div class="col-lg-6 mb-4">
 
-                      <h6 class="font-weight-bold text-uppercase"> &nbsp; Hoop4eu info<i class="fas fa-business-time fa-1x text-info" style="margin-left:10px;"></i></h6>
+                      <h6 class="font-weight-bold text-uppercase"> &nbsp; Hoop4eu Vacatures<i class="fas fa-business-time fa-1x text-info" style="margin-left:10px;"></i></h6>
 
                       <ul class="list-unstyled">
 
-                      <li class="nav-item"><a href="{{asset('/personeel')}}" class="nav-link lead pb-0 ">Ik zoek personeel</a></li>
-                      <li class="nav-item"><a href="mailto:info@hoop4.eu?subject=Kandidaat aanbevelen&body=Ik wil graag een kandidaat aanbevelen," class="nav-link lead pb-0 ">Kandidaat aanbevelen</a></li>
-                      <li class="nav-item"><a href="{{asset('/nieuwsoverzicht')}}" class="nav-link lead pb-0 ">Nieuwsoverzicht</a></li>
-                      <li class="nav-item"><a href="{{asset('/over-ons')}}" class="nav-link lead pb-0 ">Over ons </a></li>
-                      <li class="nav-item"><a href="{{asset('/blog')}}" class="nav-link lead pb-0 ">Blog</a></li> 
+                      <li class="nav-item"><a href="{{route('vacatures-none')}}" class="nav-link lead pb-0">Administratieve-Vacatures</a></li>
 
-                        <li class="nav-item"><a href="{{asset('/contact')}}" class="nav-link lead pb-0 ">Contact</a></li>
+                <li class="nav-item"><a href="{{route('vacatures-none')}}" class="nav-link lead pb-0 ">Callcenter-Vacatures </a></li>
+
+                <li class="nav-item"><a href="{{route('vacatures-none')}}" class="nav-link lead pb-0 ">Commerciële-Vacatures</a></li>
+
+                <li class="nav-item"><a href="{{route('vacatures-none')}}" class="nav-link lead pb-0 ">Financieel-Vacatures</a></li>
+
+                <li class="nav-item"><a href="{{route('vacatures-none')}}" class="nav-link lead pb-0 ">Horeca-Vacatures</a></li>
+
+                <li class="nav-item"><a href="{{route('vacatures-none')}}" class="nav-link lead pb-0 ">Logistiek-Vacatures</a></li>
+
+                <li class="nav-item"><a href="{{route('vacatures-none')}}" class="nav-link lead pb-0 ">Industie-Vacatures</a></li>
+
+                <li class="nav-item"><a href="{{route('vacatures-none')}}" class="nav-link lead pb-0 ">Schoonmaak-Vacatures</a></li>
 
                        
                         
-
-
-                       
+                                       
 
                       </ul>
 
@@ -139,6 +145,80 @@
         </div>
 
       </li>
+
+      <li class="nav-item dropdown megamenu"><a id="megamneu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle font-weight-bold text-uppercase">Hoop4EU Info</a>
+
+<div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
+
+  <div class="container">
+
+    <div class="row bg-white rounded-0 m-0 shadow-sm">
+
+      <div class="col-lg-7 col-xl-8">
+
+        <div class="p-4" style="    height: 400px;">
+
+          <div class="row">
+
+            <div class="col-lg-6 mb-4">
+
+            <h6 class="font-weight-bold text-uppercase"> Hoop4EU Info &nbsp;<i class="fas fa-search fa-1x text-info"></i></h6>
+
+              <ul class="list-unstyled">
+
+              <li class="nav-item"><a href="{{asset('/personeel')}}" class="nav-link lead pb-0 ">Ik zoek personeel</a></li>
+              <li class="nav-item"><a href="mailto:info@hoop4.eu?subject=Kandidaat aanbevelen&body=Ik wil graag een kandidaat aanbevelen," class="nav-link lead pb-0 ">Kandidaat aanbevelen</a></li>
+              
+
+                <li class="nav-item"><a href="{{asset('/contact')}}" class="nav-link lead pb-0 ">Contact</a></li>
+
+                
+
+
+
+              </ul>
+
+            </div>
+
+            <div class="col-lg-6 mb-4">
+
+              <h6 class="font-weight-bold text-uppercase"> &nbsp; Hoop4eu info<i class="fas fa-business-time fa-1x text-info" style="margin-left:10px;"></i></h6>
+
+              <ul class="list-unstyled">
+
+              <li class="nav-item"><a href="{{asset('/nieuwsoverzicht')}}" class="nav-link lead pb-0 ">Nieuwsoverzicht</a></li>
+              <li class="nav-item"><a href="{{asset('/over-ons')}}" class="nav-link lead pb-0 ">Over ons </a></li>
+              <li class="nav-item"><a href="{{asset('/blog')}}" class="nav-link lead pb-0 ">Blog</a></li> 
+
+               
+                
+
+
+               
+
+              </ul>
+
+            </div>
+
+        
+
+      
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-lg-5 col-xl-4 px-0 d-none d-lg-block image-meni"></div>
+
+    </div>
+
+  </div>
+
+</div>
+
+</li>
 
       <li class="nav-item"><a href="{{route('contact')}}" class="nav-link font-weight-bold text-uppercase">AAnmelden als werkzoekende</a></li>
 

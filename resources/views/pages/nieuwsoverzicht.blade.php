@@ -64,7 +64,6 @@ Wat wil je dat het recruitment-traject je oplevert? Wij gaan voor een positieve 
 
             </div>
 
-            <img class="card-img-right flex-auto d-none d-md-block img-fluid" src="{{URL::asset('../public/img/girljob2.jpg')}}" alt="Card image cap">
 
           </div>
 
@@ -91,7 +90,6 @@ Wat wil je dat het recruitment-traject je oplevert? Wij gaan voor een positieve 
 
             </div>
 
-            <img class="card-img-right flex-auto d-none d-md-block img-fluid" src="{{URL::asset('../public/img/girlcv2.jpg')}}" alt="Card image cap">
 
           </div>
 

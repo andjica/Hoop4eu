@@ -28,8 +28,8 @@ Wil jij leren, ontwikkelen en onderdeel worden van een groeiend bedrijf? In het 
 <div class="row">
   <div class="col-md-7">
     <a href="#">
-      <img class="img-fluid rounded mb-3 mb-md-0" src="./img/logo3.jpg" style="    width: 73%;
-    height: 100%;" alt="">
+      <img class="img-fluid rounded mb-3 mb-md-0" src="./img/logo4.png" style="    margin-top: 120px;
+    margin-left: 172px;" alt="">
     </a>
   </div>
   <div class="col-md-5">

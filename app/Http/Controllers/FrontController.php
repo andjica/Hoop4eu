@@ -34,6 +34,7 @@ class FrontController extends Controller
             
         ]);
 
+     
 
         $cityId = request()->citysearch;
         $categoryId = request()->categorysearch;
@@ -64,6 +65,16 @@ class FrontController extends Controller
 
     public function get_vacaturestwo()
     {
+        request()->validate([
+            'cityfilter' => 'required',
+            'categoryfilter' => 'required',
+           
+        ],
+        [
+            'cityfilter.required' => 'Stad  is verplicht',
+            'categoryfilter.required' => 'Branche is verplicht',
+            
+        ]);
         $cityId = request()->cityfilter;
         $categoryId = request()->categoryfilter;
         $fulltime = request()->fulltime ? 1 : 0;
@@ -132,5 +143,21 @@ class FrontController extends Controller
     {
         return view('pages.contact');
     }
+
+    public function blog()
+    {
+        return view('pages.blog');
+    }
+
+    public function personeel()
+    {
+        return view('pages.personeel');
+    }
+
+    public function nieuwsoverzicht()
+    {
+        return view('pages.nieuwsoverzicht');
+    }
+
 
 }

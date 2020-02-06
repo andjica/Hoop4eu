@@ -32,9 +32,10 @@
                             @endforeach
                             </select>
                             @if ($errors->has('categorysearch')) <p style="color:red;">{{ $errors->first('categorysearch') }}</p> @endif 
+
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-8 p-0">
-                            <button type="submit" class="btn wrn-btn">Search</button>
+                            <button type="submit" class="btn wrn-btn">Zoek Vacatures</button>
                         </div>
                         </form>
                     </div>
