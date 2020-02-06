@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\City;
 use App\Category;
 use App\Job;
+use App\People;
 
 class HomeController extends Controller
 {
@@ -65,7 +66,9 @@ class HomeController extends Controller
     public function erp()
     {
       
-        return view('pages.erp');
+        $people = People::all();
+
+        return view('pages.erp', compact('people'));
     }
 
     public function toevoegen()

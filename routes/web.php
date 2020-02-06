@@ -52,6 +52,7 @@ Route::group(['middleware' => ['admin']], function () {
     Route::post('/create-city', 'CityController@create')->name('create-city');
     Route::post('/create-category', 'CategoryController@create')->name('create-category');
     Route::post('/create-job', 'JobController@create')->name('create-job');
+    Route::post('/create-people', 'PeopleController@create')->name('create-people');
 
     
     //edit
@@ -68,7 +69,7 @@ Route::group(['middleware' => ['admin']], function () {
     Route::get('/delete-category/{id}', 'CategoryController@destroy')->name('delete-category');
     Route::get('/delete-job/{id}', 'JobController@destroy')->name('delete-job');
     Route::get('/delete-city/{id}', 'CityController@destroy')->name('delete-city');
-  
+    Route::get('/delete-people/{id}', 'PeopleController@destroy')->name('delete-people');
 });
 
 

@@ -18,9 +18,15 @@
 
           <!-- Content Row -->
           <div class="row">
-
+          @if(session('success'))
+                <div class="alert alert-success">
+                    {{session('success')}}
+                </div>
+        @endif
          
-
+            <h2>Zoek hier snel uw kandidaat</h2>
+            <p></p>  
+            <input class="form-control" id="myInput" type="text" placeholder="Type hier uw zoekopdracht..">
           <table class="table">
             <thead>
                 <tr>
@@ -32,23 +38,25 @@
                 <th scope="col">Functie</th>
                 <th scope="col">E-mail</th>
                 <th scope="col">Tel-nummer</th>
-                <th scope="col">Foto</th>
+                <th scope="col">Delete user</th>
                 </tr>
             </thead>
 
 
-            <tbody>
+            <tbody id="myTable">
+            @foreach($people as $p)
                 <tr>
-                <th scope="row">1</th>
-                <td>Danny </td>
-                <td>Milosevic</td>
-                <td>13-08-1997</td>
-                <td>227670140</td>
-                <td>developer</td>
-                <td>danny@gmail.com</td>
-                <td>0618574485</td>
-                <td><img src="./img/logo4.png" style="max-height:80px; max-width:80px;"></td>
+                <th scope="row">{{$p->id}}</th>
+                <td>{{$p->first_name}} </td>
+                <td>{{$p->last_name}}</td>
+                <td>{{$p->born_date}}</td>
+                <td>{{$p->bsn_number}}</td>
+                <td>{{$p->functie}}</td>
+                <td>{{$p->email}}</td>
+                <td>{{$p->tel_number}}</td>
+                <td><a href="{{asset('/delete-people/'.$p->id)}}"><i class="fas fa-trash-alt text-danger"></i><a></td>
                 </tr>
+                @endforeach
             </tbody>
         </table>
                     
