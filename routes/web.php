@@ -39,6 +39,10 @@ Route::get('/get-all-cities', 'CityController@index')->name('get-all-cities');
 Route::get('/home-create-city', 'HomeController@create_city')->name('home-create-city');
 Route::get('/home-create-category', 'HomeController@create_category')->name('home-create-category');
 
+//erp system
+Route::get('/erp', 'HomeController@erp')->name('erp');
+Route::get('/toevoegen', 'HomeController@toevoegen')->name('toevoegen');
+
 
 
 //middlware protection

@@ -61,4 +61,16 @@ class HomeController extends Controller
 
         return view('pages.home-jobs', compact('jobs'));
     }
+
+    public function erp()
+    {
+      
+        return view('pages.erp');
+    }
+
+    public function toevoegen()
+    {
+      
+        return view('pages.toevoegen');
+    }
 }
