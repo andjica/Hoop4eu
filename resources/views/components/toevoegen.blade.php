@@ -64,11 +64,11 @@
   <div class="form-group">
     <label for="exampleInputEmail1">  Tel-nummer</label>
     <input type="text" class="form-control" name="tel" aria-describedby="emailHelp" placeholder="   Tel-nummer">
-    <small name="emailHelp" class="form-text text-muted">test</small>
+    
   </div>
 
 
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary">Voer kandidaat in</button>
 </form>
     </div>
 </div>

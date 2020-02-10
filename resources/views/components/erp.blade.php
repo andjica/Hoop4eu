@@ -38,7 +38,7 @@
                 <th scope="col">Functie</th>
                 <th scope="col">E-mail</th>
                 <th scope="col">Tel-nummer</th>
-                <th scope="col">Delete user</th>
+                <th scope="col">Verwijder</th>
                 </tr>
             </thead>
 

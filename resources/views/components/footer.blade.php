@@ -90,11 +90,13 @@
         <h6 class="text-uppercase font-weight-bold">Actuele Vacatures</h6>
         <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
         <p>
-          <a href="{{asset('/vacatures-none')}}">IT- Vacatures</a>
-        </p>
-        <p>
           <a href="{{asset('/vacatures-none')}}">Techniek Vacatures</a>
         </p>
+        
+        <p>
+          <a href="{{asset('/vacatures-none')}}">IT- Vacatures</a>
+        </p>
+        
         <p>
           <a href="{{asset('/vacatures-none')}}">Zorg Vacatures</a>
         </p>
@@ -106,21 +108,21 @@
       <!-- Grid column -->
 
       <!-- Grid column -->
-      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-placement">
 
         <!-- Links -->
-        <h6 class="text-uppercase font-weight-bold">Contact</h6>
-        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <h6 class="text-uppercase font-weight-bold " id="contact-centered">Contact</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto testing2" style="width: 60px;">
         <p>
-        <a href="tel:0180 – 531191"><i class="fas fa-phone text-warning" style="color:#17a2b8 !important; font-size: 20px; margin-right:12px;"></i></a> Telefoon: <a href="tel:0180 – 531191" style="color:black;">0180 – 531191 </a>
+        <a href="tel:0180 – 531191" ><i class="fas fa-phone text-warning" style="color:#17a2b8 !important; font-size: 20px; margin-right:12px;"></i></a> Telefoon: <a href="tel:0180 – 531191" style="color:black;">0180 – 531191 </a>
         <p>
       
       
            <a href="https://www.google.com/maps/place/Deventerseweg+50,+2994+LD+Barendrecht,+Nederland/@51.8623325,4.5110653,17z/data=!3m1!4b1!4m5!3m4!1s0x47c433ce0b4939cb:0x9ae14e5ce3cdd39c!8m2!3d51.8623325!4d4.513254"><i class="fas fa-map-marker-alt text-warning" style="color:#17a2b8 !important; margin-right: 16px; font-size: 20px;"></i></a> Adres: 
            
-           <a href="https://www.google.com/maps/place/Deventerseweg+50,+2994+LD+Barendrecht,+Nederland/@51.8623325,4.5110653,17z/data=!3m1!4b1!4m5!3m4!1s0x47c433ce0b4939cb:0x9ae14e5ce3cdd39c!8m2!3d51.8623325!4d4.513254" style="margin-left: 0px;
+           <a  href="https://www.google.com/maps/place/Deventerseweg+50,+2994+LD+Barendrecht,+Nederland/@51.8623325,4.5110653,17z/data=!3m1!4b1!4m5!3m4!1s0x47c433ce0b4939cb:0x9ae14e5ce3cdd39c!8m2!3d51.8623325!4d4.513254" style="margin-left: 0px;
     color: black;">Deventerseweg 50, </a>  <a href="https://www.google.com/maps/place/Deventerseweg+50,+2994+LD+Barendrecht,+Nederland/@51.8623325,4.5110653,17z/data=!3m1!4b1!4m5!3m4!1s0x47c433ce0b4939cb:0x9ae14e5ce3cdd39c!8m2!3d51.8623325!4d4.513254" style="margin-left: 0px;
-    color: black; margin-left:35px;">2994LD Barendrecht </a>
+    color: black; margin-left:35px;" class="responsive">2994LD Barendrecht </a>
         <p>
           <a href="tel:+ 31 (0) 0180 – 531191" ><i class="fas fa-envelope mr-3"  style="color:#17a2b8 !important; font-size: 20px; "></i></a>E-mail: <a href="mailto:info@hoop4.eu" style="color:black;">info@hoop4.eu</a></p>
      
@@ -160,3 +162,25 @@
 </body>
 
 </html>
+
+<style>
+@media screen and (max-width:768px){
+  .testing2{
+
+    margin-left: 78px !important;
+  }
+
+  .text-placement{
+    text-align: left;
+    padding-left: 70px;
+    padding-right: 70px;
+
+  }
+
+  #contact-centered{
+    text-align: center;
+  }
+}
+
+
+</style>

@@ -221,4 +221,20 @@ width:100%;
       box-shadow: 2px 2px 3px #999;
       z-index: 100;
    }
+   .fa-search:before {
+    content: "\f002";
+    font-size: 20px;
+}
   }
+
+@media screen and (max-width:768px){
+
+  .skiptranslate{
+    display:none;
+  }
+
+   .banner{
+    top: 0px !important;
+  }
+
+}

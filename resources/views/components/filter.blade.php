@@ -60,7 +60,8 @@
                 <div class="card-body ">
                 
                 <i class="fas fa-phone text-warning"></i> Telefoon: 0180 – 531191<br><br>
-                <i class="fas fa-map-marker-alt text-warning"></i> Deventerseweg 50, 2994LD Barendrecht <br><br>
+                <i class="fas fa-map-marker-alt text-warning" style="margin-right: 10px;"></i>Deventerseweg 50, <p style="margin-left: 22px;"> 2994LD Barendrecht </p><br><br>
+                
                 <a href="https://www.facebook.com/Hoop4eu/"><i class="fab fa-facebook-square fa-2x text-primary"></i></a> &nbsp;  <a href="https://twitter.com/hoop4eu"><i class="fab fa-twitter-square fa-2x text-info"></i> </a> &nbsp; 
                 <a href="https://www.linkedin.com/company/hoop-4-eu"><i class="fa fa-linkedin fa-2x text-primary"></i> </a><a href="https://www.youtube.com/channel/UCt84MgIuZcf0_va3atJCYjA"> &nbsp; <i class="fa fa-youtube-square fa-2x text-danger"></i></a>
                 </div>
